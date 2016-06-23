@@ -19,6 +19,7 @@ def get_books(request):
 
 
 def delete_book(request, pk):
+    """Remove book from library."""
     book = get_object_or_404(Book, pk=pk)
     book.delete()
     books = Book.objects.all()
@@ -26,8 +27,8 @@ def delete_book(request, pk):
 
 
 def read_book(request, pk):
+    """Mark book as read or not."""
     book = get_object_or_404(Book, pk=pk)
     book.read = False if book.read else True
     book.save()
-    # return render(request, 'list.html')
     return redirect(get_books)
