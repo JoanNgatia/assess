@@ -1,0 +1,52 @@
+.title {
+    background-color:#000000;
+    padding-top: 0px;
+    height: 80px;
+    margin-bottom: 0px;
+}
+
+a.name {
+    color: #D9D9D9;
+}
+
+p.brand {
+    display: inline-block;
+}
+
+.menu {
+    background-color:#3352C0;
+    min-height: 100vh;
+}
+
+ol {
+    margin-top: 50px;
+}
+
+h4 {
+    color: #D9D9D9;
+}
+
+.items {
+    margin-top: 20px;
+}
+
+.add {
+    background-color:#2397F3;
+    color: #D9D9D9;
+}
+
+.list {
+    display: flex;
+}
+
+button.add {
+    margin-left: 20em;
+}
+
+button.category {
+    position: absolute;
+    bottom: 12em;
+    left: 50%;
+    margin-left: 30px;
+    background-color:#2397F3;
+}
