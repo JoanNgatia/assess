@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from books.views import get_books, delete_book
+from books.views import get_books, delete_book, read_book
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^books/list', get_books),
     url(r'^books/(?P<pk>[0-9]+)/delete', delete_book, name="delete"),
+    url(r'^books/(?P<pk>[0-9]+)/read', read_book, name="read"),
 ]

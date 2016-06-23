@@ -23,3 +23,11 @@ def delete_book(request, pk):
     book.delete()
     books = Book.objects.all()
     return render(request, 'list.html', {'books': books})
+
+
+def read_book(request, pk):
+    book = get_object_or_404(Book, pk=pk)
+    book.read = False if book.read else True
+    book.save()
+    # return render(request, 'list.html')
+    return redirect(get_books)
