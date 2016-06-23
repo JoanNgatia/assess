@@ -12,3 +12,7 @@ class Book(models.Model):
     author = models.CharField(max_length=250)
     read = models.BooleanField(default=False)
     date_added = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        """Return string with post title"""
+        return self.title
