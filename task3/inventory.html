@@ -25,11 +25,12 @@
                 <div class="col-md-4 menu">
                     <!-- Sidebar -->
                     <div id="sidebar-wrapper">
-                        <ol class="sidebar-nav">
+                        <ol class="sidebar-nav categories">
                             <li class="sidebar-brand">
                                 <a href="#">
                                     <h4>Food and Beverage</h4>
                                 </a>
+                                <button type="button" class="btn btn-sm btn-danger">Delete</button>
                             </li>
                             <li>
                                 <a href="#">
@@ -49,7 +50,30 @@
                         </ol>
                     </div>
                     <div>
-                        <button class="btn btn-sm category">Add Category</button>
+                        <button class="btn btn-sm category" data-toggle="modal" data-target="#myModal">Add Category</button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+                              <!-- Modal content-->
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title">Modal Header</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <form id="form" action="#" method="POST">
+                                    <input id="description" name="description" type="text" />
+                                    <input id="add" type="submit" value="Add" />
+                                  </form>
+                                  <div id="alert"></div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-8 items">

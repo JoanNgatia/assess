@@ -20,6 +20,7 @@ p.brand {
 
 li {
     margin-top: 50px;
+    /*display: flex;*/
 }
 
 h4 {
