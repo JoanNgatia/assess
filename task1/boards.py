@@ -1,5 +1,9 @@
+# TASK:Create a tool that is able to copy all the checklists on one of the
+# lists in a board and paste it on all the cards in all the lists on the
+# board. You may collect the boardId as user input before running the
+# script.
+
 import requests
-# import json
 
 ACCESS_KEY = 'da15af8c50eed328c49a1a416074463a'
 
