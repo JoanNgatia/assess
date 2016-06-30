@@ -3,10 +3,13 @@ var main = function() {
 
     $('#add').click( function() {
       var Description = $('#description').val();
-      console.log(Description)
-      $('.categories').append('<li><a>'+Description+'</a></li>');
+      $('.categories').append('<li><a><h4>'+Description+'</h4></a></li>');
       var categories = $('.categories').html();
       localStorage.setItem('categories', categories);
+    });
+
+    $('.delete').click(function() {
+        $('h4').remove();
     });
 
     if(localStorage.getItem('categories')){

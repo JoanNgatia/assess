@@ -51,3 +51,7 @@ button.category {
     margin-left: 30px;
     background-color:#2397F3;
 }
+
+.delete {
+    background-color: red
+}

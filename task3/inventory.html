@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <!-- inhouse design -->
     <link rel="stylesheet" href="assets/css/base.css">
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
 </head>
 
 <body>
@@ -28,11 +30,11 @@
                 <!-- Sidebar -->
                 <div id="sidebar-wrapper">
                     <ol class="sidebar-nav categories">
-                        <li class="sidebar-brand">
+                        <li class="">
                             <a href="#">
                                 <h4>Food and Beverage</h4>
                             </a>
-                            <button type="button" class="btn btn-sm btn-danger">Delete</button>
+                            <i class="material-icons delete">delete</i>
                         </li>
                         <li>
                             <a href="#">
@@ -47,6 +49,7 @@
                         <li>
                             <a href="#">
                                 <h4>Clothing and Garments</h4>
+                                <i class="material-icons delete">delete</i>
                             </a>
                         </li>
                     </ol>
@@ -56,31 +59,7 @@
                         <input id="description" name="description" type="text" />
                         <input id="add" type="submit" value="Add" />
                     </form>
-                    <div id="alert"></div>
                     <button class="btn btn-sm category" data-toggle="modal" data-target="#myModal">Add Category</button>
-
-                    <!-- Modal -->
-                    <!-- <div class="modal fade" id="myModal" role="dialog">
-                 g           <div class="modal-dialog">
-                               Modal content
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                  <h4 class="modal-title">Modal Header</h4>
-                                </div>
-                                <div class="modal-body">
-                                  <form id="form" action="#" method="POST">
-                                    <input id="description" name="description" type="text" />
-                                    <input id="add" type="submit" value="Add" />
-                                  </form>
-                                  <div id="alert"></div>
-                                </div>
-                                <div class="modal-footer">
-                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                              </div>
-                            </div>
-                        </div> -->
                 </div>
             </div>
             <div class="col-md-8 items">
